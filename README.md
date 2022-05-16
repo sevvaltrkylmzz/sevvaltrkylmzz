@@ -33,6 +33,11 @@
                                                                                                 
  ![Github stats](https://github-readme-stats.vercel.app/api?username=sevvaltrkylmzz)
 
+                                                                                                
+                                                                                                
+#                                                                               
+                                                                                                
+                                                                                                
  <div align="center">
-  <img src="https://giphy.com/gifs/scaler-official-tech-pro-keyboard-Dk57URqjqjHjNGHeMV" width="600" height="300"/>
+  <img src="https://c.tenor.com/X3jJ_r78JlcAAAAC/bobs-burger-tina-belcher.gif" width="600" height="300"/>
 </div>
