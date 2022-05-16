@@ -33,3 +33,6 @@
                                                                                                 
  ![Github stats](https://github-readme-stats.vercel.app/api?username=sevvaltrkylmzz)
 
+ <div align="center">
+  <img src="https://giphy.com/gifs/scaler-official-tech-pro-keyboard-Dk57URqjqjHjNGHeMV" width="600" height="300"/>
+</div>
