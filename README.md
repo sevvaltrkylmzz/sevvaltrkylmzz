@@ -15,6 +15,12 @@
   </tr>
 </table>
 
+<br><br>
+
+### sevval@github ~ $ ./stats.sh
+
+<img src="./stats-card.svg" width="860" alt="Languages, repos and commit counts" />
+
 <br>
 
 [Instagram · @themightydeveloper](https://instagram.com/themightydeveloper) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/sevvalturkyilmaz/)
