@@ -43,7 +43,10 @@ def languages(s, repo_list):
             continue
         r = s.get(repo["languages_url"], timeout=30)
         if r.ok:
-            for name, n in r.json().items():
+            per = r.json()
+            top = ", ".join(f"{k}={v}" for k, v in sorted(per.items(), key=lambda kv: -kv[1])[:4])
+            print(f"  {repo['name']}: stars={repo['stargazers_count']} langs={len(per)} {top}")
+            for name, n in per.items():
                 total[name] = total.get(name, 0) + n
     grand = sum(total.values()) or 1
     ranked = sorted(total.items(), key=lambda kv: -kv[1])
