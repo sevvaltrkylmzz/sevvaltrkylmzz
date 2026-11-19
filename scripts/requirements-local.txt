@@ -1,0 +1,6 @@
+# only needed to (re)generate the left panel locally
+pyfiglet
+# optional, for --photo mode
+pillow
+numpy
+rembg
