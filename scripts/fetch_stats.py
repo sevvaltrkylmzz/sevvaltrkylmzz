@@ -36,21 +36,34 @@ def repos(s, user):
         page += 1
 
 
-def languages(s, repo_list):
-    total = {}
+def languages(s, repo_list, min_share=0.10):
+    """Language mix across repos, every repo weighted equally.
+
+    Raw byte totals get hijacked by one repo that has a virtualenv / vendored
+    library committed (tens of MB of Python + C++ + Cython). So each repo is
+    normalised to 100 %, languages under `min_share` of a repo are dropped, and
+    the repos are averaged.
+    """
+    score, n = {}, 0
     for repo in repo_list:
         if repo.get("fork"):
             continue
         r = s.get(repo["languages_url"], timeout=30)
-        if r.ok:
-            per = r.json()
-            top = ", ".join(f"{k}={v}" for k, v in sorted(per.items(), key=lambda kv: -kv[1])[:4])
-            print(f"  {repo['name']}: stars={repo['stargazers_count']} langs={len(per)} {top}")
-            for name, n in per.items():
-                total[name] = total.get(name, 0) + n
-    grand = sum(total.values()) or 1
-    ranked = sorted(total.items(), key=lambda kv: -kv[1])
-    return [{"name": k, "bytes": v, "pct": round(100 * v / grand, 1)} for k, v in ranked]
+        if not r.ok:
+            continue
+        per = r.json()
+        if not per:
+            continue
+        top = ", ".join(f"{k}={v}" for k, v in sorted(per.items(), key=lambda kv: -kv[1])[:4])
+        print(f"  {repo['name']}: stars={repo['stargazers_count']} langs={len(per)} {top}")
+        tot = sum(per.values())
+        kept = {k: v / tot for k, v in per.items() if v / tot >= min_share}
+        norm = sum(kept.values())
+        for k, v in kept.items():
+            score[k] = score.get(k, 0) + v / norm
+        n += 1
+    ranked = sorted(score.items(), key=lambda kv: -kv[1])
+    return [{"name": k, "repos": round(v, 2), "pct": round(100 * v / max(n, 1), 1)} for k, v in ranked]
 
 
 def contributions(s, user, created: dt.datetime):

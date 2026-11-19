@@ -48,7 +48,7 @@ def build(stats, contrib) -> str:
         f".n{{font-weight:bold;font-size:24px}}\n"
     )
     p = [svg_open(W, H, "GitHub stats: languages and numbers", css), window_chrome(W, H, "stats.sh")]
-    p.append(f'<text x="{BAR_X}" y="64" font-size="11.5" fill="{DIM}">languages · share of code in my repos</text>')
+    p.append(f'<text x="{BAR_X}" y="64" font-size="11.5" fill="{DIM}">languages · share of my public repos</text>')
 
     # stacked bar, revealed left -> right
     p.append(f'<clipPath id="bar"><rect x="{BAR_X}" y="72" width="0" height="12" rx="6">'
