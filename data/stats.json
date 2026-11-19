@@ -1,0 +1,124 @@
+{
+ "user": "sevvaltrkylmzz",
+ "public_repos": 28,
+ "own_repos": 26,
+ "stars": 47,
+ "forks": 1,
+ "languages": [
+  {
+   "name": "Python",
+   "bytes": 90346056,
+   "pct": 90.9
+  },
+  {
+   "name": "C++",
+   "bytes": 5011929,
+   "pct": 5.0
+  },
+  {
+   "name": "Cython",
+   "bytes": 2059950,
+   "pct": 2.1
+  },
+  {
+   "name": "Java",
+   "bytes": 859286,
+   "pct": 0.9
+  },
+  {
+   "name": "C",
+   "bytes": 598576,
+   "pct": 0.6
+  },
+  {
+   "name": "JavaScript",
+   "bytes": 257380,
+   "pct": 0.3
+  },
+  {
+   "name": "HTML",
+   "bytes": 91908,
+   "pct": 0.1
+  },
+  {
+   "name": "CSS",
+   "bytes": 88519,
+   "pct": 0.1
+  },
+  {
+   "name": "Fortran",
+   "bytes": 36224,
+   "pct": 0.0
+  },
+  {
+   "name": "PowerShell",
+   "bytes": 8834,
+   "pct": 0.0
+  },
+  {
+   "name": "Go Template",
+   "bytes": 8715,
+   "pct": 0.0
+  },
+  {
+   "name": "R",
+   "bytes": 6148,
+   "pct": 0.0
+  },
+  {
+   "name": "Roff",
+   "bytes": 5377,
+   "pct": 0.0
+  },
+  {
+   "name": "Meson",
+   "bytes": 4220,
+   "pct": 0.0
+  },
+  {
+   "name": "Shell",
+   "bytes": 2892,
+   "pct": 0.0
+  },
+  {
+   "name": "Jinja",
+   "bytes": 1931,
+   "pct": 0.0
+  },
+  {
+   "name": "CMake",
+   "bytes": 1692,
+   "pct": 0.0
+  },
+  {
+   "name": "Nix",
+   "bytes": 1310,
+   "pct": 0.0
+  },
+  {
+   "name": "Stan",
+   "bytes": 1281,
+   "pct": 0.0
+  },
+  {
+   "name": "Batchfile",
+   "bytes": 676,
+   "pct": 0.0
+  },
+  {
+   "name": "Lua",
+   "bytes": 139,
+   "pct": 0.0
+  },
+  {
+   "name": "Smarty",
+   "bytes": 127,
+   "pct": 0.0
+  }
+ ],
+ "fetched": "2026-11-19T22:40:52+00:00",
+ "commits_total": 144,
+ "pull_requests": 10,
+ "issues": 0,
+ "commits_year": 11
+}
