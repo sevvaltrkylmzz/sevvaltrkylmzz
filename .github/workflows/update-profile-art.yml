@@ -28,7 +28,15 @@ jobs:
         run: |
           python scripts/fetch_contributions.py
           python scripts/render_heatmap_svg.py
+      - name: Fetch + render language / repo / commit stats
+        continue-on-error: true # never block the heatmap if the API hiccups
+        env:
+          GITHUB_USER: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/fetch_stats.py
+          python scripts/render_stats_svg.py
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: refresh contribution graph [skip ci]"
-          file_pattern: "data/contributions.json contrib-heatmap.svg"
+          file_pattern: "data/contributions.json contrib-heatmap.svg data/stats.json stats-card.svg"
