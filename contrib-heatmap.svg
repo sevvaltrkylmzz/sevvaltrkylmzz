@@ -3,7 +3,7 @@
 <style>
 text{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace;white-space:pre}
 @keyframes drop{from{opacity:0;transform:translateY(-9px)}to{opacity:1;transform:none}}
-.b{opacity:0;animation:drop .5s ease-out forwards}
+.b{animation:drop .5s ease-out backwards}
 
 @media (prefers-reduced-motion: reduce){*{animation:none!important}}
 </style>

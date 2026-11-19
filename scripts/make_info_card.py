@@ -39,7 +39,7 @@ def build() -> str:
         f".k{{fill:{LILAC};font-weight:bold}}\n"
         + ("" if STATIC else
            "@keyframes in{from{opacity:0;transform:translateX(-10px)}to{opacity:1;transform:none}}\n"
-           ".r{opacity:0;animation:in .45s ease-out forwards}\n")
+           ".r{animation:in .45s ease-out backwards}\n")
         + ("" if not STATIC else ".r{opacity:1}\n")
     )
     p = [svg_open(W, H, "Sevval — info card", css), window_chrome(W, H, "neofetch")]

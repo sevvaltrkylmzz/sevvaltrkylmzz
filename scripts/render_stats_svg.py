@@ -44,7 +44,7 @@ def build(stats, contrib) -> str:
 
     css = (
         "@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}\n"
-        ".r{opacity:0;animation:in .5s ease-out forwards}\n"
+        ".r{animation:in .5s ease-out backwards}\n"
         f".n{{font-weight:bold;font-size:24px}}\n"
     )
     p = [svg_open(W, H, "GitHub stats: languages and numbers", css), window_chrome(W, H, "stats.sh")]

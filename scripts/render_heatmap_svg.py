@@ -54,7 +54,7 @@ def build(data: dict) -> str:
 
     css = (
         "@keyframes drop{from{opacity:0;transform:translateY(-9px)}to{opacity:1;transform:none}}\n"
-        ".b{opacity:0;animation:drop .5s ease-out forwards}\n"
+        ".b{animation:drop .5s ease-out backwards}\n"
     )
     p = [svg_open(W, H, "Contribution heatmap", css), window_chrome(W, H, "contributions.sh")]
 
