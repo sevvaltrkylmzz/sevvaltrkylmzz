@@ -2,41 +2,6 @@
  "user": "sevvaltrkylmzz",
  "days": [
   {
-   "date": "2025-11-16",
-   "count": 0,
-   "level": 0
-  },
-  {
-   "date": "2025-11-17",
-   "count": 0,
-   "level": 0
-  },
-  {
-   "date": "2025-11-18",
-   "count": 0,
-   "level": 0
-  },
-  {
-   "date": "2025-11-19",
-   "count": 0,
-   "level": 0
-  },
-  {
-   "date": "2025-11-20",
-   "count": 0,
-   "level": 0
-  },
-  {
-   "date": "2025-11-21",
-   "count": 0,
-   "level": 0
-  },
-  {
-   "date": "2025-11-22",
-   "count": 0,
-   "level": 0
-  },
-  {
    "date": "2025-11-23",
    "count": 0,
    "level": 0
@@ -1853,13 +1818,18 @@
   },
   {
    "date": "2026-11-21",
+   "count": 1,
+   "level": 1
+  },
+  {
+   "date": "2026-11-22",
    "count": 0,
    "level": 0
   }
  ],
- "total": 59,
- "current_streak": 3,
- "longest_streak": 3,
+ "total": 60,
+ "current_streak": 4,
+ "longest_streak": 4,
  "best_day": {
   "date": "2026-10-11",
   "count": 13
@@ -1877,7 +1847,7 @@
   "2026-08": 1,
   "2026-09": 10,
   "2026-10": 33,
-  "2026-11": 10
+  "2026-11": 11
  },
- "fetched": "2026-11-21T14:37:28+00:00"
+ "fetched": "2026-11-22T14:31:39+00:00"
 }
