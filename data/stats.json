@@ -1,44 +1,44 @@
 {
  "user": "sevvaltrkylmzz",
- "public_repos": 28,
- "own_repos": 26,
+ "public_repos": 29,
+ "own_repos": 27,
  "stars": 47,
  "forks": 1,
  "languages": [
   {
    "name": "Java",
    "repos": 9.0,
-   "pct": 37.5
+   "pct": 36.0
   },
   {
    "name": "Python",
-   "repos": 5.76,
-   "pct": 24.0
+   "repos": 6.76,
+   "pct": 27.0
   },
   {
    "name": "HTML",
    "repos": 3.92,
-   "pct": 16.3
+   "pct": 15.7
   },
   {
    "name": "JavaScript",
    "repos": 3.88,
-   "pct": 16.2
+   "pct": 15.5
   },
   {
    "name": "CSS",
    "repos": 1.24,
-   "pct": 5.2
+   "pct": 5.0
   },
   {
    "name": "Nix",
    "repos": 0.21,
-   "pct": 0.9
+   "pct": 0.8
   }
  ],
- "fetched": "2026-11-27T16:36:37+00:00",
- "commits_total": 155,
+ "fetched": "2026-11-28T15:28:13+00:00",
+ "commits_total": 162,
  "pull_requests": 10,
  "issues": 0,
- "commits_year": 22
+ "commits_year": 29
 }
